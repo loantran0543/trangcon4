@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+header {
+	background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("1.jpeg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 100px;
+	color: white;
+}
+
+header img{
+	width: auto;
+	height: 150px;
+}
+
+header .trai {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	height: 20px;
+	padding-top: 20px;
+}
+
+.trai a{
+	text-decoration: none;
+	color: white;
+}
+
+.trai a:hover{
+	color:#B26D5E;
+}
+
+header .phai{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 400px;
+	height: 30px;
+	padding: 25px 0;
+}
+
+.phai .button a{
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+	letter-spacing: 0.1rem;
+	text-decoration: none;
+	font-weight: 500px;
+	color: white;
+	border: 1px solid white;
+	padding: 10px 20px;	
+}
+
+.phai .button a span{
+	position: absolute;
+	display: block;
+	background: #B26D5E;
+}
+
+.phai .button a span:nth-child(1){
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 2px;
+	transform-origin: left;
+	transform: scaleX(0);
+	transition: transform 0.2s;
+}
+
+.phai .button a:hover span:nth-child(1){
+	transform: scaleX(1);
+	transition-delay: 0.3s;
+}
+
+.phai .button a span:nth-child(2){
+	right:0;
+	top:0;
+	width: 2px;
+	height: 100%;
+	transform-origin: top;
+	transform: scaleY(0);
+	transition: transform 0.2s;
+}
+
+.phai .button a:hover span:nth-child(2){
+	transform: scaleY(1);
+}
+
+.phai .button a span:nth-child(3){
+	right:0;
+	bottom:0;
+	width: 100%;
+	height: 2px;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform 0.2s;
+}
+
+.phai .button a:hover span:nth-child(3){
+	transform: scaleX(1);
+	transition-delay: 0.2s;
+}
+
+.phai .button a span:nth-child(4){
+	left:0;
+	bottom:0;
+	width: 2px;
+	height: 100%;
+	transform-origin: bottom;
+	transform: scaleY(0);
+	transition: transform 0.2s;
+}
+
+.phai .button a:hover span:nth-child(4){
+	transform: scaleY(1);
+	transition-delay: 0.3s;
+}
+
+.phai .button a:hover{
+	border: none;
+	color:#B26D5E;
+}
+
+
+main {
+	background-color: #181818;
+	color: white;
+	padding: 100px 0;
+}
+#body1{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#body1 .box1{
+	display: flex;
+	justify-content:space-between;
+	border: 1px solid white;
+	width: 60%;
+}
+
+#body1 .box1 .left{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	width:30%;
+	padding: 30px 10px 30px 70px;
+}
+
+#body1 .box1 .right{
+	padding: 30px 70px 30px 0;
+}
+
+
+#body1 .box2{
+	display: flex;
+	justify-content:space-between;
+	border: 1px solid white;
+	width: 60%;
+}
+
+#body1 .box2 .left{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	width:30%;
+	padding: 30px 10px 30px 70px;
+}
+
+#body1 .box2 .right{
+	padding: 30px 70px 30px 0;
+}
+
+
+#body1 .box3{
+	display: flex;
+	justify-content:space-between;
+	border: 1px solid white;
+	width: 60%;
+}
+
+#body1 .box3 .left{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	width:30%;
+	padding: 30px 10px 30px 70px;
+}
+
+#body1 .box3 .right{
+	padding: 30px 70px 30px 0;
+}
+
+
+#body1 .box4{
+	display: flex;
+	justify-content:space-between;
+	border: 1px solid white;
+	width: 60%;
+}
+
+#body1 .box4 .left{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	width:30%;
+	padding: 30px 10px 30px 70px;
+}
+
+#body1 .box4 .right{
+	padding: 30px 70px 30px 0;
+}
+
+#body1 .box:hover{
+	border: 2px solid #B26D5E ;	
+}
+
+.box{
+	margin: 30px 0;
+}
+ .bottom a{
+	text-decoration: none;
+	color: white;
+	 border: 1px solid white;
+	 padding: 10px 20px;
+	 margin : 0px 0
+}
+
+.bottom a:hover{
+	background-color:#B26D5E; 
+	color:black;
+	border: 1px solid white;
+}
+
+.top p{ 
+margin-bottom: 10px;
+}
+
+.bottom p{ 
+margin-bottom: 30px;
+}
+
+footer{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	background-color: #181818;
+	color: white;
+	padding: 100px 0;
+}
+footer img{
+	width: 40%;
+}
+.leftbox h4,p{
+	padding: 10px 0;
+}
+.leftbox{
+	text-align: left;
+}
+.rightbox{
+	background-color: #B26D5E;
+	width: 30%;
+	padding: 40px;
+}
+.rightbox input,textarea{
+	display: block;
+	width: 100%;
+	margin: 10px 0;
+	padding: 5px;
+	
+	}
+.nutbam{
+	background: transparent;
+	border: 1px solid black;
+	padding: 10px 20px;
+	color: black;
+} 
+
+.nutbam:hover{
+	border:  1px solid white;
+	color: white
+}
